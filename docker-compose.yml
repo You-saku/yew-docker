@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  yew:
+    build:
+      context: . # Dockerfileで親ディレクトリを参照するときに使うらしいぞ
+      dockerfile: ./docker/rust/Dockerfile
+    tty: true
+    container_name: yew
+    environment:
+      - USER=root
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/usr/src/yew
