@@ -1,8 +1,8 @@
 init:
-	docker-compose up -d --build
+	docker compose up -d --build
 up:
-	docker-compose up -d 
+	docker compose up -d 
 down:
-	docker-compose down
+	docker compose down
 sh:
-	docker-compose exec yew sh
+	docker compose exec yew sh
