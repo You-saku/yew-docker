@@ -1,4 +1,4 @@
-FROM rust:1.58-slim
+FROM rust:1.72.0-slim
 
 EXPOSE 3000/tcp
 
